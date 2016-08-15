@@ -8,7 +8,12 @@ HumanStandardToken.sol is an example of a token that has optional extras fit for
 
 1. Initial Finite Supply (upon creation one specifies how much is minted).  
 2. In the absence of a token registry: Optional Decimal, Symbol & Name.  
-3. Optional approveAndCall() functionality to notify a contract if an approval() has occurred.  
+3. Optional approveAndCall() functionality to notify a contract if an approval() has occurred.
+
+HumanAssetStandardToken.sol is an example of a token that has optional extras fit for your issuing your own tokens, to be mainly used by other humans to manage assets. It includes the 3 points here above and adds:
+
+1. mintToken() functionality to add tokens when new assets enter the inventory.
+2. removeToken() functionality when assets are removed from the inventory.
 
 There is a set of tests written for the HumanStandardToken.sol using the Truffle framework to do so.
 
